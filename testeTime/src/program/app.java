@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import java.util.Timer;
 
-public class HotelApp {
+public class app {
 
 	public static void main(String[] args) {
 
@@ -22,15 +22,16 @@ public class HotelApp {
 			System.out.print("Digite a hora da entrada: ");
 			int horaEntrada = read.nextInt();
 			LocalDateTime data1 = LocalDateTime.of(2000, 1, diaEntrada, horaEntrada, 0);
+			
 
 			System.out.print("Digite o dia da saida: ");
 			int diaSaida = read.nextInt();
 			System.out.print("digite a hora da saida: ");
 			int horaSaida = read.nextInt();
 			LocalDateTime data2 = LocalDateTime.of(2000, 1, diaSaida, horaSaida, 0);
-
+			
 			drt = Duration.between(data1, data2);
-
+			
 			System.out.print("Digite o preço da hora: ");
 			precoHora = read.nextFloat();
 			System.out.println("Confira os valores: ");
